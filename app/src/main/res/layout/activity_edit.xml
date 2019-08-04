@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/HeadingEdit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/qualificationEdit"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="9dp"
+                android:text="Edit Resume"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/userNameEdit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/HeadingEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Your name" />
+
+            <EditText
+                android:id="@+id/emailEdit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/phoneEdit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Phone number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/qualitiesEdit"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/phoneEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Your Qualities" />
+
+            <EditText
+                android:id="@+id/qualificationEdit"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/qualitiesEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="43dp"
+                android:gravity="top"
+                android:hint="   Enter Academic Qualifications\n   Format( Exam - Percentage )" />
+
+            <EditText
+                android:id="@+id/experienceEdit"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/qualificationEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="   Enter Work Experience\n   Format( Job - Job title)" />
+
+            <EditText
+                android:id="@+id/projectsEdit"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/experienceEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Projects" />
+
+            <TextView
+                android:id="@+id/skillsEdit"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/projectsEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:text="Skills"
+                android:textSize="22dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skillsEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 1"
+                android:id="@+id/skill1Edit"/>
+
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill1Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating1Edit"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating1Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 2"
+                android:id="@+id/skill2Edit"/>
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill2Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating2Edit"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating2Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 3"
+                android:id="@+id/skill3Edit"
+                />
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill3Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating3Edit"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rating3Edit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Achievements"
+                android:id="@+id/achievementsEdit"
+                />
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/achievementsEdit"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Languages Spoken"
+                android:id="@+id/languageEdit"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+</RelativeLayout>

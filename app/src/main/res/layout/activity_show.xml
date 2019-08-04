@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ShowActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Name"
+        android:textSize="35dp"
+        android:gravity="center"
+        android:textColor="#000000"
+        android:id="@+id/nameShow"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/nameShow">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:layout_marginTop="25dp"
+                android:text="Email: "
+                android:textSize="25dp"
+                android:id="@+id/emailShow"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Phone: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/emailShow"
+                android:textSize="25dp"
+                android:id="@+id/phoneShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Qualities: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/phoneShow"
+                android:textSize="25dp"
+                android:id="@+id/qualitiesShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Academic Qualifications: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/qualitiesShow"
+                android:textSize="25dp"
+                android:id="@+id/qualificationShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text=" Work Experience: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/qualificationShow"
+                android:textSize="25dp"
+                android:id="@+id/experienceShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Projects: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/experienceShow"
+                android:textSize="25dp"
+                android:id="@+id/projectsShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Skills: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/projectsShow"
+                android:textSize="25dp"
+                android:id="@+id/skillsShow"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                android:text="Skill1: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/skillsShow"
+                android:textSize="25dp"
+                android:id="@+id/skill1Show"
+                />
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skill1Show"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/rating1Show"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                android:text="Skill2: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/rating1Show"
+                android:textSize="25dp"
+                android:id="@+id/skill2Show"
+                />
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/skill2Show"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/rating2Show"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="50dp"
+                android:paddingRight="10dp"
+                android:text="Skill3: "
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/rating2Show"
+                android:textSize="25dp"
+                android:id="@+id/skill3Show"
+                />
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill3Show"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/rating3Show"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Achievements: "
+                android:textSize="25dp"
+                android:layout_below="@+id/rating3Show"
+                android:layout_marginTop="20dp"
+                android:id="@+id/achievementShow"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                android:text="Languages spoken: "
+                android:textSize="25dp"
+                android:layout_below="@+id/achievementShow"
+                android:layout_marginTop="20dp"
+                android:id="@+id/languageShow"/>
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

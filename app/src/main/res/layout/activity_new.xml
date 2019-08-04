@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/Heading"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignStart="@+id/qualificationNew"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:layout_marginStart="0dp"
+                android:layout_marginTop="9dp"
+                android:text="Create Resume"
+                android:textSize="30dp" />
+
+            <EditText
+                android:id="@+id/nameFile"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="23dp"
+                android:layout_below="@+id/Heading"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter name of the Resume file" />
+
+            <EditText
+                android:id="@+id/userNameNew"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/nameFile"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="22dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Your name" />
+
+            <EditText
+                android:id="@+id/emailNew"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/userNameNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Your Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/phoneNew"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/emailNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Enter Phone number"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/qualitiesNew"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/phoneNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Your Qualities" />
+
+            <EditText
+                android:id="@+id/qualificationNew"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/qualitiesNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="43dp"
+                android:gravity="top"
+                android:hint="   Enter Academic Qualifications\n   Format( Exam - Percentage )" />
+
+            <EditText
+                android:id="@+id/experienceNew"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/qualificationNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="   Enter Work Experience\n   Format( Job - Job title)" />
+
+            <EditText
+                android:id="@+id/projectsNew"
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/experienceNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Projects" />
+
+            <TextView
+                android:id="@+id/skillsNew"
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/projectsNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:text="Skills"
+                android:textSize="22dp" />
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skillsNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 1"
+                android:id="@+id/skill1New"/>
+
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill1New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating1New"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating1New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 2"
+                android:id="@+id/skill2New"/>
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill2New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating2New"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rating2New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Skill 3"
+                android:id="@+id/skill3New"
+                />
+            <RatingBar
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/skill3New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:id="@+id/rating3New"/>
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="150dp"
+                android:layout_below="@+id/rating3New"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:gravity="top"
+                android:hint="Enter Achievements"
+                android:id="@+id/achievementsNew"
+                />
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/achievementsNew"
+                android:layout_alignParentEnd="true"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="45dp"
+                android:hint="Languages Spoken"
+                android:id="@+id/languageNew"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+
+
+
+</RelativeLayout>
